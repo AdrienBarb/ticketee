@@ -6,6 +6,7 @@
         <li>
           <%= link_to fa_icon("pencil") + " Edit Project", edit_project_path(@project), class: "btn btn-primary" %>
         </li>
+        <% admins_only do %>
         <li>
           <%= link_to fa_icon("trash") + " Delete Project",
                                         admin_project_path(@project),
@@ -13,6 +14,7 @@
                                         data: { confirm: "Are you sure you want to delete this project?" },
                                         class: "btn btn-danger" %>
         </li>
+        <% end %>
     </ul>
 </header>
 
