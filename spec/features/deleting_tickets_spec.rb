@@ -8,6 +8,8 @@ require "rails_helper"
     end
 
     before do
+      login_as(author)
+      assign_role!(author, :viewer, project)
       visit project_ticket_path(project, ticket)
     end
 
