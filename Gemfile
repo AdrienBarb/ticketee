@@ -57,3 +57,5 @@ gem "simple_form", "~> 3.1.0"
 gem 'devise', git: 'https://github.com/plataformatec/devise' , branch: '3-stable'
 gem "pundit", "~> 0.3.0"
 
+gem "carrierwave", "~> 0.10.0"
+
