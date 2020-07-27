@@ -62,3 +62,5 @@ gem "carrierwave", "~> 0.10.0"
 
 gem "database_cleaner", "~> 1.4"
 
+gem 'rake', '< 11.0'
+
