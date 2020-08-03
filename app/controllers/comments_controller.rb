@@ -3,7 +3,7 @@ class CommentsController < ApplicationController
 
   def create
 
-    @comment = @ticket.comments.build(whitelisted_params)
+    @comment = @ticket.comments.build(sanitized_parameters)
     @comment.author = current_user
     authorize @comment, :create?
 
