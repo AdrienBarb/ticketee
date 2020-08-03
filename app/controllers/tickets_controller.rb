@@ -58,6 +58,7 @@ class TicketsController < ApplicationController
     redirect_to @project
   end
 
+
   private
 
   def set_project
