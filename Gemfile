@@ -70,5 +70,7 @@ group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor'
 end
+
+gem "active_model_serializers", "~> 0.9.3"
 gem "puma", group: :production
 gem 'sprockets-rails', '2.2.2'
