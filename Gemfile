@@ -5,7 +5,7 @@ ruby "2.6.6"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.11'
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", group: [:development, :test]
+gem "sqlite3"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -67,7 +67,6 @@ gem "database_cleaner", "~> 1.4"
 gem 'rake', '< 11.0'
 
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor'
 end
 
