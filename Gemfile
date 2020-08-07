@@ -66,4 +66,4 @@ gem "database_cleaner", "~> 1.4"
 
 gem 'rake', '< 11.0'
 
-
+gem "rails_12factor", group: :production
